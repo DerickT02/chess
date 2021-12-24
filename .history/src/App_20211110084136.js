@@ -27,15 +27,13 @@ function onDrop(sourceSquare, targetSquare) {
     });
   });
   if (move === null) return false; // illegal move
-  
+  setTimeout(makeRandomMove, 200);
   return true;
-
-  
 }
   
   return (
     <div className="App">
-      <Chessboard position = {game.fen()} onPieceDrop = {onDrop}/>
+      <Chessboard position = {fen} onPieceDrop = {onDrop}/>
     </div>
   );
 }

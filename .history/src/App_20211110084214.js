@@ -29,8 +29,6 @@ function onDrop(sourceSquare, targetSquare) {
   if (move === null) return false; // illegal move
   
   return true;
-
-  
 }
   
   return (
